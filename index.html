@@ -3,16 +3,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
-    <link rel="icon" type="image.png" href="https://www.google.com/s2/favicons?domain=jacinto.desing">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-2/css/all.min.css">
+    <title>Quote Generator</title>
+    <link rel="icon" type="image.png" href="https://www.google.com/s2/favicons?domain=">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Hello , World</h1>
+    <div class="quote-container" id="quote-container">
+        <!--Quote-->
+        <div class="quote-text">
+            <i class="fas fa-quote-left"></i>
+            <span id="quote"></span>
+        </div>
+        <!--Author-->
+        <div class="quote-author">
+            <span id="author"></span>
+        </div>
+       <!--Buttons-->
+        <div class="button-container">
+        <button class="twitter-button" id="twitter" title="Tweet This!">
+            <i class="fab fa-twitter"></i>
+        </button>
+        <button onclick="darkMode()" class="dark-mode" id="dark-mode">Toggle Dark Mode!</button>
+        <button id="new-quote">New Quote</button>
+        </div>
+    
+   </div>
+
+ 
+    
+   <!--Looder-->
+<div class="loader" id="loader"></div>
+
+
     <!-- Script -->
-  
     <script src="script.js"></script>
 
 </body>
